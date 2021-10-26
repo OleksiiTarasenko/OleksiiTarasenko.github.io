@@ -25,6 +25,7 @@ body {
   top: 0;
   left: 0;
   transition: transform 0.5s ease-in-out;
+  
 }
 
 .sidebar > div {
@@ -38,9 +39,18 @@ body {
 }
 
 .sidebar h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 3vw;
+  margin-bottom: 30px;
   margin-top: -30px;
+}
+
+.sidebar p {
+  display: inline-block;
+  font-size: max(2vw, 0.875rem);
+ width: 90%;
+ text-align: center;
+ 
+  
 }
 
 .main-slide {
@@ -67,14 +77,18 @@ button {
   cursor: pointer;
   font-size: 16px;
   padding: 15px;
+  opacity: .33;
 }
 
 button:hover {
   color: #222;
+  opacity: 1;
 }
 
 button:focus {
   outline: none;
+  opacity: 1;
+
 }
 
 .container .controls button {
@@ -96,6 +110,8 @@ button:focus {
   border-bottom-right-radius: 5px;
 }
 
-p {
-  padding: 50px 50px;
+@media screen and (orientation: portrait) {
+  .sidebar p {
+   display: none;
+  }
 }
